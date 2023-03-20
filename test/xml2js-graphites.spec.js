@@ -41,7 +41,7 @@ describe("Testing xml2js.js:", function () {
             {
               compact: false,
               spaces: 2,
-              indentAttributesMaxSize: 80,
+              indentAttributesWidth: 80,
               indentAttributes: true,
             }
           )
@@ -71,7 +71,7 @@ describe("Testing xml2js.js:", function () {
             {
               compact: false,
               spaces: 2,
-              indentAttributesMaxSize: 80,
+              indentAttributesWidth: 80,
               indentAttributes: true,
             }
           )
@@ -95,9 +95,8 @@ describe("Testing xml2js.js:", function () {
             {
               compact: false,
               spaces: 2,
-              indentAttributesMaxSize: 80,
+              indentAttributesWidth: 80,
               indentAttributes: true,
-              indentAttributesCloseSingleLine: true,
             }
           )
         ).toEqual(xml2.trim());

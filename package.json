@@ -1,10 +1,10 @@
 {
-  "name": "xml-js",
-  "version": "1.6.11",
-  "description": "A convertor between XML text and Javascript object / JSON text.",
+  "name": "xml-js-graphite",
+  "version": "1.7.0",
+  "description": "A convertor between XML text and Javascript object / JSON text. Forked to add Graphite specific features.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nashwaan/xml-js.git"
+    "url": "git+https://github.com/ibm-maximo-dev/xml-js.git"
   },
   "author": "Yousuf Almarzooqi <ysf953@gmail.com>",
   "license": "MIT",
