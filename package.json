@@ -1,6 +1,6 @@
 {
   "name": "xml-js-graphite",
-  "version": "1.7.0",
+  "version": "1.7.1",
   "description": "A convertor between XML text and Javascript object / JSON text. Forked to add Graphite specific features.",
   "repository": {
     "type": "git",

@@ -5,6 +5,23 @@ var convert = require("../lib");
 
 describe("Testing xml2js.js:", function () {
   describe("Graphite enhancements:", function () {
+
+    describe("encodes single & character in attributes", function () {
+      var xml = '<button hidden="{x > 10 &amp; x &lt; 20}"/>';
+      var js = {
+        elements: [
+          {
+            type: "element",
+            name: "button",
+            attributes: { hidden: "{x > 10 & x < 20}" },
+          },
+        ],
+      };
+      it("should xml to json and back to xml", function () {
+        expect(convert.js2xml(js, { compact: false })).toEqual(xml);
+      });
+    });
+
     describe("encodes & and < characters in attributes", function () {
       var xml = '<button hidden="{x > 10 &amp;&amp; x &lt; 20}"/>';
       var js = {
